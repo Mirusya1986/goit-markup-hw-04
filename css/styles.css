@@ -356,11 +356,10 @@ ul {
 }
 .clients-list {
   display: flex;
-   justify-content: center;
   align-items: center;
-  /* flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-top: -30px;
-  margin-left: -30px; */
+  margin-left: -30px; 
 }
 .clients-item {
   flex-basis: calc((100% - 180px) / 6);
@@ -369,8 +368,8 @@ ul {
 }
 .clients-link {
   display: flex;
-   justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
