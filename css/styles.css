@@ -159,6 +159,8 @@ ul {
   max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -267,20 +269,26 @@ ul {
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: #F5F4FA;
 }
 
 .socials-list {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 16px;
+  padding-bottom: 30px;
 }
 .socials-item {
   width: 44px;
   height: 44px;
 }
-.socials-list-link:not(:last-child) {
-  margin-right: 10px;
+.socials-item:not(:last-child) {
+  padding-right: 10px;
 }
+/* .socials-list-link:not(:last-child) {
+  margin-right: 10px;
+} */
 .socials-list-link {
   width: 44px;
   height: 44px; 
@@ -325,8 +333,8 @@ ul {
   margin-left: 30px;
   margin-top: 30px;
   background-color: var(--primary-background-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.02)
-  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
 }
 .section-title {
   font-weight: 700;
@@ -351,7 +359,7 @@ ul {
 }
 /*clients*/
 .clients {
-  padding-top: 47px;
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 .clients-list {
@@ -466,7 +474,7 @@ ul {
 width: 44px;
 height: 44px;
 border-radius: 50%;
-border-color: rgba(255, 255, 255, 0.1);
+background-color: rgba(255, 255, 255, 0.1);
   }
   .footer-link:hover,
   .footer-link:focus {
@@ -507,7 +515,7 @@ border-color: rgba(255, 255, 255, 0.1);
 .portfolio-link:focus {
   background-color: var(--accent-color);
   color: var(--white-text-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.01), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(58, 8, 8, 0.12)
+  box-shadow:0px 3px 1px rgba(0, 0, 0, 0.01), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(58, 8, 8, 0.12)
 }
 .projects {
   display: flex;
@@ -526,6 +534,14 @@ border-color: rgba(255, 255, 255, 0.1);
 }
 .projects-item:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
+}
+.projects-item:hover,
+.projects-item:focus {
+  color: #ffffff;
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+  0px 1px 2px rgba(0, 0, 0, 0.08),
+  0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .projects-title {
   font-weight: 700;
